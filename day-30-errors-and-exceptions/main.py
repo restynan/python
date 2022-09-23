@@ -12,7 +12,17 @@ else:
     my_file.read()
 finally:
     print("in finally")
+
+height = float(input("Enter your height: "))
+weight = int(input("Enter your weight: "))
+if height > 3:
+    raise ValueError("Human Height should not be greater 13 foot")
+
+bmi = weight / height ** 2
+print(bmi)
+
 '''
+
 # TODO: Catch the exception and make sure the code runs without crashing.
 fruits = ["Apple", "Pear", "Orange"]
 
@@ -48,3 +58,4 @@ for post in facebook_posts:
         total_likes += likes
 
 print(total_likes)
+'''
