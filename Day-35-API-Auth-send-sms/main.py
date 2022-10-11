@@ -9,11 +9,15 @@ import requests
 import os
 from twilio.rest import Client
 
+OWE_ENDPOINT = "https://api.openweathermap.org/data/2.5/onecall"
+API_KEY = ""
 
+account_sid = ""
+auth_token = ""
 
 weather_params = {
-    'lat': 40.712776,
-    'lon': -74.005974,
+    'lat': 9.071930,
+    'lon': 7.455750,
     'appid': API_KEY,
     'exclude': "current,minutely, daily"
 }
@@ -39,7 +43,6 @@ for hour_data in weather_slice:
         print(message.status)
         print(message.sid)
         will_rain = True
-
 
 
 
