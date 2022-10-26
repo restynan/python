@@ -8,7 +8,7 @@ service = Service(executable_path=chrome_driver_path)
 driver = webdriver.Chrome(service=service)
 
 driver.get("https://en.wikipedia.org/wiki/Main_Page")
-'''
+
 #clicking on a-link
 article_count = driver.find_element(By.CSS_SELECTOR, "#articlecount a")
 article_count.click()
@@ -24,5 +24,5 @@ hurricane_julia.click()
 search = driver.find_element(By.NAME, "search")
 search.send_keys("John")
 search.send_keys(Keys.ENTER)
-'''
+
 driver.quit()

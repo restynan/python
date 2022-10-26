@@ -4,7 +4,7 @@ with open("website.html") as file:
     contents = file.read()
 
 soup = BeautifulSoup(contents, "html.parser")
-'''
+
 #print(soup.title)
 #print(soup.title.string)
 # if there are may a tags , it return the first a tag
@@ -23,7 +23,7 @@ all_anchor_tags = soup.find_all(name="a")
 for tag in all_anchor_tags:
     print(tag.get_text())
     print(tag.get("href"))
-'''
+
 #using css selectors
 #select_one gives us the first matching item
 company_url = soup.select_one(selector="p a")

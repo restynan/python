@@ -73,8 +73,8 @@ if diff_percent > 2:
     for article in formatted_articles:
         message = client.messages.create(
             body=article,
-            from_='+13856854943',
-            to='+16418191250'
+            from_='+13856854937',
+            to='+16416661250'
         )
         print(message.status)
         print(message.sid)

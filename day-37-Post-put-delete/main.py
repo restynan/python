@@ -4,7 +4,7 @@ import datetime as dt
 # https://docs.pixe.la/
 
 PIXELA_ENDPOINT = "https://pixe.la/v1/users"
-USERNAME = "nabeel943khan"
+USERNAME = "n943khan"
 USER_TOKEN = ""
 GRAPH_ID = "graph1"
 
